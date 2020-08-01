@@ -1,0 +1,15 @@
+create table Hours(team int, employee varchar(30), week1 int, week2 int, week3 int, week4 int);
+
+insert into Hours(team, employee, week1, week2, week3, week4) values (1,'Sally',30,	40,	20,	30);
+insert into Hours(team, employee, week1, week2, week3, week4) values (1,'Joe',80,	40,	60,	80);
+insert into Hours(team, employee, week1, week2, week3, week4) values (1,'Ralph',75,	25,	50,	40);
+insert into Hours(team, employee, week1, week2, week3, week4) values (1,'Steven',60,	60,	60,	60);
+insert into Hours(team, employee, week1, week2, week3, week4) values (1,'Blake',20,	40,	40,	50);
+insert into Hours(team, employee, week1, week2, week3, week4) values (1,'Stephanie',25,	50,	50,	30);
+insert into Hours(team, employee, week1, week2, week3, week4) values (1,'Julia',40,	40,	40,	40);
+insert into Hours(team, employee, week1, week2, week3, week4) values (1,'Sam',40,	35,	40,	35);
+
+select avg(week1) from Hours;
+select avg(week2) from Hours;
+select avg(week3) from Hours;
+select avg(week4) from Hours;
