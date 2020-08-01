@@ -1,0 +1,61 @@
+SQL> create table Hours(team int, employee varchar(30), week1 int, week2 int, week3 int, week4 int);
+
+Table created.
+
+SQL> insert into Hours(team, employee, week1, week2, week3, week4) values (1,'Sally',30,	40,	20,	30);
+
+1 row created.
+
+SQL> insert into Hours(team, employee, week1, week2, week3, week4) values (1,'Joe',80,	40,	60,	80);
+
+1 row created.
+
+SQL> insert into Hours(team, employee, week1, week2, week3, week4) values (1,'Ralph',75,	25,	50,	40);
+
+1 row created.
+
+SQL> insert into Hours(team, employee, week1, week2, week3, week4) values (1,'Steven',60,	60,	60,	60);
+
+1 row created.
+
+SQL> insert into Hours(team, employee, week1, week2, week3, week4) values (1,'Blake',20,	40,	40,	50);
+
+1 row created.
+
+SQL> insert into Hours(team, employee, week1, week2, week3, week4) values (1,'Stephanie',25,	50,	50,	30);
+
+1 row created.
+
+SQL> insert into Hours(team, employee, week1, week2, week3, week4) values (1,'Julia',40,	40,	40,	40);
+
+1 row created.
+
+SQL> insert into Hours(team, employee, week1, week2, week3, week4) values (1,'Sam',40,	35,	40,	35);
+
+1 row created.
+
+SQL> select avg(week1) from Hours;
+
+AVG(WEEK1)                                                                      
+----------                                                                      
+     46.25                                                                      
+
+SQL> select avg(week2) from Hours;
+
+AVG(WEEK2)                                                                      
+----------                                                                      
+     41.25                                                                      
+
+SQL> select avg(week3) from Hours;
+
+AVG(WEEK3)                                                                      
+----------                                                                      
+        45                                                                      
+
+SQL> select avg(week4) from Hours;
+
+AVG(WEEK4)                                                                      
+----------                                                                      
+    45.625                                                                      
+
+SQL> spool off
